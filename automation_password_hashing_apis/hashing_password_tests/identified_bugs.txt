@@ -1,0 +1,33 @@
+
+Bugs List.
+bug #1 No authentication/authorization step when calling the REST endpoints (totally open or could be a design implementation
+      and hence couldn't automate it for auth-token)
+
+bug #2 POST method doesn’t return the identifier immediately.
+
+bug #3 Passing string input for hash ID for GET hash method breaks.
+
+bug #4 POST method you can use blank password which shouldn't be allowed.
+
+bug #5 POST method call for stats returns the same result as GET hash method.
+
+bug #6 POST method allow to use junk input password ‘>“ab12”:”}’. It- Needs to be format of password (automated)
+
+bug #7 POST no maintaining of current keys, after shutdown removes all stored entries (not automated)
+
+bug #8 POST method doesn’t gracefully shutdown and serve the request.
+
+bug #9 What’s the point of shutdown endpoint when nothing is saved? (not automated. dupe from above)
+
+bug #10 Shutdown signal received for incorrect URL for shutdown API and server responded Shutting down
+
+bug #11 shutdown request doesn't return message in JSON format. only app records message to console as standard output.
+
+bug #12 curl -v -H "application/json" http://localhost:8088/hash/$#@#!
+Received 3 different error responses for following 3 tests, not sure if this inconsistency is by design or it should be addressed
+    With $#@#!> event not found
+
+    With ascii > invalid syntax
+
+    With non-existent number> Hash not found
+
