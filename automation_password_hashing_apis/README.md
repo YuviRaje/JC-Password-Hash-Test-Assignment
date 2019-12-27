@@ -20,9 +20,21 @@ operating systems. Unpack and use the binary corresponding to your OS of choice.
 
 **Test Execution:**
 
-pytest -k password_hash_api_automation_jc/test_post_single_ password_hash_call_with_immediate_job_identifier
+To run a specific set of tests
 
-pytest hash_password_assignment_tests/
+pytest -k automation_password_hashing_apis/test_post_single_ password_hash_call_with_immediate_job_identifier
+
+To run entire  tests:
+
+pytest hashing_password_tests/
+
+**Test Results**:
+
+Tests Failed - 5
+
+Tests Passed - 10
+
+![image-20191226180802161](C:\Users\jadhay\AppData\Roaming\Typora\typora-user-images\image-20191226180802161.png)
 
 
 
@@ -31,6 +43,8 @@ pytest hash_password_assignment_tests/
 - More tests refactoring
 
 - Modular structure and usage of Python classes
+
+- Possibly addition of more test coverage for both hashing patterns.
 
   
 
