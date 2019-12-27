@@ -34,9 +34,7 @@ Tests Failed - 5
 
 Tests Passed - 10
 
-![image-20191226180802161](C:\Users\jadhay\AppData\Roaming\Typora\typora-user-images\image-20191226180802161.png)
-
-
+![](C:\Users\jadhay\Desktop\Password_hash_Test_results.JPG)
 
 **ToDo**
 
